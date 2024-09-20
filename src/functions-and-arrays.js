@@ -71,13 +71,14 @@ function doesWordExist(words, word) {
     if (words.length===0) {
         return null
     } else {
+        let flag = false
         words.forEach(element => {
             console.log("element: ", element, "word: ", word);
             if (element.toLowerCase() == word.toLowerCase()) {
                 console.log("verdadero");
-                return true
+                flag = true
             }
         })
-        return false       
+        return flag       
     }
 }

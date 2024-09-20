@@ -32,8 +32,8 @@ function findLongestWord(words) {
 // Iteration 3 | Sum Numbers
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers(numbers) { 
-    if (numbers.length===0) {
+function sumNumbers(numbers) {
+    if (numbers.length === 0) {
         return 0
     }
     let sum = 0
@@ -50,7 +50,7 @@ function sumNumbers(numbers) {
 const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
 function averageNumbers(numbers) {
-    if (numbers.length===0) {
+    if (numbers.length === 0) {
         return 0
     }
     let sum = 0
@@ -58,7 +58,7 @@ function averageNumbers(numbers) {
         sum += number;
     });
     return sum / numbers.length
- }
+}
 
 
 
@@ -66,4 +66,18 @@ function averageNumbers(numbers) {
 // Iteration 5 | Find Elements
 const words2 = ["machine", "subset", "trouble", "starting", "matter", "eating", "truth", "disobedience"];
 
-function doesWordExist() { }
+function doesWordExist(words, word) {
+
+    if (words.length===0) {
+        return null
+    } else {
+        words.forEach(element => {
+            console.log("element: ", element, "word: ", word);
+            if (element.toLowerCase() == word.toLowerCase()) {
+                console.log("verdadero");
+                return true
+            }
+        })
+        return false       
+    }
+}

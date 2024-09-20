@@ -49,7 +49,16 @@ function sumNumbers(numbers) {
 // Iteration 4 | Numbers Average
 const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() { }
+function averageNumbers(numbers) {
+    if (numbers.length===0) {
+        return 0
+    }
+    let sum = 0
+    numbers.forEach(number => {
+        sum += number;
+    });
+    return sum / numbers.length
+ }
 
 
 

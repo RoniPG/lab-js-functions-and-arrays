@@ -82,3 +82,4 @@ function doesWordExist(words, word) {
         return flag       
     }
 }
+// Solved lab
